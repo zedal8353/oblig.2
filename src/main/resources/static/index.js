@@ -50,6 +50,7 @@ function buyTicket() {
     }
 
     var ticket = {
+        antall: antall,
         fornavn: fornavn,
         etternavn: etternavn,
         telefonnr: telefonnr,
@@ -89,7 +90,8 @@ function updateTicketList() {
             ', Etternavn: ' + ticket.etternavn +
             ', Telefonnr: ' + ticket.telefonnr +
             ', Epost: ' + ticket.epost +
-            ', Film: ' + ticket.movie;
+            ', Film: ' + ticket.movie +
+            ', Antall: ' +ticket.antall;
         ticketListElement.appendChild(listItem);
     });
 }

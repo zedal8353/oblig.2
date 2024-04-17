@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <title>Title</title>
+    <script src="index.js"></script>
 </head>
 <body>
 <h1>Bestilling av kinobilletter</h1>
@@ -20,13 +20,15 @@
     </select>
 </div>
 <br>
-<label for="antall">Antall</label>
-<input id="antall" type="text">
-<!-- Legg til et span-element for feilmeldinger til antall -->
-<span id="antall-error" style="color: red;"></span><br>
 
 <section>
+
     <br>
+    <label for="antall">Antall</label>
+    <input id="antall" type="number">
+    <!-- Legg til et span-element for feilmeldinger til fornavn -->
+    <span id="antall-error" style="color: red;"></span><br><br>
+
     <label for="fornavn">Fornavn</label>
     <input id="fornavn" type="text">
     <!-- Legg til et span-element for feilmeldinger til fornavn -->
@@ -47,7 +49,6 @@
     <!-- Legg til et span-element for feilmeldinger til epost -->
     <span id="epost-error" style="color: red;"></span><br>
 </section>
-Test
 
 <br>
 <button type="button" onclick="buyTicket()">Kjøp billett</button>
